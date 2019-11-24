@@ -1,0 +1,11 @@
+framework module ClipboardManager {
+  umbrella header "ClipboardManager.h"
+
+  export *
+  module * { export * }
+}
+
+module ClipboardManager.Swift {
+    header "ClipboardManager-Swift.h"
+    requires objc
+}

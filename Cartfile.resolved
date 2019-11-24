@@ -1,0 +1,5 @@
+github "Alamofire/Alamofire" "4.9.1"
+github "SwiftyJSON/SwiftyJSON" "5.0.0"
+github "httpswift/swifter" "1.4.7"
+github "nik3212/ClipboardManager" "1.0.0"
+github "soffes/HotKey" "v0.1.3"

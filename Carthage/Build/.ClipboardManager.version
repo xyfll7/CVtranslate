@@ -1,0 +1,10 @@
+{
+  "commitish" : "1.0.0",
+  "Mac" : [
+    {
+      "name" : "ClipboardManager",
+      "hash" : "45c4a5c350ce00afa050eda26887178ecac9c7f7cb720ccfa46561dd27dbc23d",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ]
+}

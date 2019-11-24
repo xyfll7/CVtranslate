@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CVSett" customModule="CVTrans" customModuleProvider="target">
+            <connections>
+                <outlet property="disableDoubleClickSlitherTranslation" destination="yAb-TP-gi0" id="uf7-kp-bTV"/>
+                <outlet property="doubleClick" destination="WkS-mK-5WW" id="IbK-qe-nt8"/>
+                <outlet property="doubleClickSpeak" destination="hIY-Q8-3XQ" id="Ypx-Rc-QiD"/>
+                <outlet property="oneKeyB" destination="aN9-rZ-5PO" id="3so-CA-1vU"/>
+                <outlet property="oneKeyG" destination="Rdo-gd-xxW" id="x2k-MH-cGY"/>
+                <outlet property="oneOrTow" destination="DnY-pg-6tw" id="3n3-8z-Sdo"/>
+                <outlet property="popUp" destination="kxU-HS-2ky" id="utR-Ao-R7L"/>
+                <outlet property="readingAloud" destination="g0G-3G-10c" id="CXz-Ij-hO5"/>
+                <outlet property="screenShot" destination="v6h-5J-ZAd" id="j2e-et-2Lq"/>
+                <outlet property="slitherTranslation" destination="Fq1-2T-8hg" id="W4C-s2-JAY"/>
+                <outlet property="slitherTranslationSpeak" destination="r56-2H-ZtK" id="Odk-lk-2Ed"/>
+                <outlet property="startUpWithLogin" destination="vhL-on-PKR" id="NJ5-tr-7xN"/>
+                <outlet property="version" destination="Em6-Z0-ZsN" id="sBg-qJ-amp"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="283" height="404"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView canDrawConcurrently="YES" distribution="fill" orientation="vertical" alignment="centerX" spacing="6" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hYP-1A-etT">
+                    <rect key="frame" x="0.0" y="0.0" width="283" height="404"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="emI-BK-uZH">
+                            <rect key="frame" x="111" y="388" width="61" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="😊😊😊" id="lPs-lx-Uzn">
+                                <font key="font" size="13" name=".AppleColorEmojiUI"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wgn-Uv-cwr">
+                            <rect key="frame" x="45" y="359" width="194" height="23"/>
+                            <buttonCell key="cell" type="roundTextured" title=" 欢迎使用CV翻译                     " bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ck6-sj-JTc">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="v6h-5J-ZAd">
+                            <rect key="frame" x="91" y="331" width="102" height="23"/>
+                            <buttonCell key="cell" type="roundTextured" title="⌘H (截屏翻译)" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="80z-IS-BrD">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="registScreenShot:" target="-2" id="h0h-QB-PrT"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aN9-rZ-5PO">
+                            <rect key="frame" x="91" y="303" width="101" height="23"/>
+                            <buttonCell key="cell" type="roundTextured" title="⌘B (一键百度)" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2LE-2Y-gbc">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="registOneKeyB:" target="-2" id="kEs-kE-KUU"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rdo-gd-xxW">
+                            <rect key="frame" x="91" y="275" width="102" height="23"/>
+                            <buttonCell key="cell" type="roundTextured" title="⌘G (一键谷歌)" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qRI-KB-i8G">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="registOneKeyG:" target="-2" id="Yef-LC-0uR"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kxU-HS-2ky">
+                            <rect key="frame" x="75" y="247" width="134" height="23"/>
+                            <buttonCell key="cell" type="roundTextured" title="⌥空格键 (弹出窗口)" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2UC-sw-K20">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="registPopUp:" target="-2" id="W4j-8c-hCk"/>
+                            </connections>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rwx-ng-Etj">
+                            <rect key="frame" x="92" y="226" width="99" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="🎉🎁🎉🎁🎉" id="DJw-Th-Jg2">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h8L-hb-Bho">
+                            <rect key="frame" x="66" y="203" width="151" height="17"/>
+                            <subviews>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WkS-mK-5WW">
+                                    <rect key="frame" x="-2" y="-2" width="102" height="21"/>
+                                    <buttonCell key="cell" type="check" title="鼠标双击翻译" bezelStyle="regularSquare" imagePosition="left" inset="2" id="5CU-E4-2i1">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="doubleClickAction:" target="-2" id="ow4-uo-GKu"/>
+                                    </connections>
+                                </button>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hIY-Q8-3XQ">
+                                    <rect key="frame" x="104" y="-2" width="49" height="21"/>
+                                    <buttonCell key="cell" type="check" title="朗读" bezelStyle="regularSquare" imagePosition="left" inset="2" id="xjm-40-Kil">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="doubleClickSpeakAction:" target="-2" id="V7U-RT-dDK"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="hIY-Q8-3XQ" secondAttribute="bottom" id="0ZX-pi-YUy"/>
+                                <constraint firstAttribute="height" constant="17" id="8lU-FL-dZK"/>
+                                <constraint firstItem="WkS-mK-5WW" firstAttribute="top" secondItem="h8L-hb-Bho" secondAttribute="top" id="9qR-5N-hYd"/>
+                                <constraint firstItem="hIY-Q8-3XQ" firstAttribute="top" secondItem="h8L-hb-Bho" secondAttribute="top" id="tXk-hU-Q1B"/>
+                                <constraint firstAttribute="bottom" secondItem="WkS-mK-5WW" secondAttribute="bottom" id="v2g-2X-X33"/>
+                            </constraints>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                        <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8g9-DL-oxa">
+                            <rect key="frame" x="66" y="180" width="151" height="17"/>
+                            <subviews>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fq1-2T-8hg">
+                                    <rect key="frame" x="-2" y="-2" width="102" height="21"/>
+                                    <buttonCell key="cell" type="check" title="鼠标划词翻译" bezelStyle="regularSquare" imagePosition="left" inset="2" id="OyO-XO-SpV">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="slitherTranslationAction:" target="-2" id="spW-7a-MZg"/>
+                                    </connections>
+                                </button>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="r56-2H-ZtK">
+                                    <rect key="frame" x="104" y="-2" width="49" height="21"/>
+                                    <buttonCell key="cell" type="check" title="朗读" bezelStyle="regularSquare" imagePosition="left" inset="2" id="7KQ-x2-dh9">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="slitherTranslationSpeakAction:" target="-2" id="QEc-5J-g3z"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Fq1-2T-8hg" secondAttribute="bottom" id="3UK-tu-SHE"/>
+                                <constraint firstItem="r56-2H-ZtK" firstAttribute="top" secondItem="8g9-DL-oxa" secondAttribute="top" id="fl0-mi-sZz"/>
+                                <constraint firstItem="Fq1-2T-8hg" firstAttribute="top" secondItem="8g9-DL-oxa" secondAttribute="top" id="nsZ-32-6xl"/>
+                                <constraint firstAttribute="bottom" secondItem="r56-2H-ZtK" secondAttribute="bottom" id="vIZ-ct-HE6"/>
+                                <constraint firstAttribute="height" constant="17" id="zsM-Vn-FUl"/>
+                            </constraints>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QOY-k9-xbe">
+                            <rect key="frame" x="62" y="151" width="160" height="23"/>
+                            <buttonCell key="cell" type="roundTextured" title="禁用鼠标[双击 划词]翻译" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yAb-TP-gi0">
+                                <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="disableDoubleClickSlitherTranslationAction:" target="-2" id="cnX-MO-B8O"/>
+                            </connections>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jEk-l3-3Pm">
+                            <rect key="frame" x="15" y="130" width="254" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="[双击 划词]会破坏⌘C正常的复制粘贴行为" id="2P3-rX-6sT">
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VJb-eW-yGD">
+                            <rect key="frame" x="4" y="108" width="275" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="您也可以在显示器任意空白处·双击鼠标右键·" id="SQo-pO-5vf">
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="v9L-ey-KTO">
+                            <rect key="frame" x="24" y="86" width="235" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="以禁用/开启 [双击 划词]翻译(好用哦～)" id="SJn-Yg-eTS">
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3en-e1-MRJ">
+                            <rect key="frame" x="34" y="63" width="215" height="17"/>
+                            <subviews>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DnY-pg-6tw">
+                                    <rect key="frame" x="-2" y="1" width="166" height="18"/>
+                                    <buttonCell key="cell" type="check" title="双击⌘C 翻译(默认单击)" bezelStyle="regularSquare" imagePosition="left" inset="2" id="244-qx-dYz" userLabel="双击⌘+c翻译">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="oneOrTow:" target="-2" id="DRC-Sa-vJx"/>
+                                    </connections>
+                                </button>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g0G-3G-10c">
+                                    <rect key="frame" x="168" y="1" width="49" height="18"/>
+                                    <buttonCell key="cell" type="check" title="朗读" bezelStyle="regularSquare" imagePosition="left" inset="2" id="A4T-Eb-vwX">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="isSpeack:" target="-2" id="dXK-1y-QdC"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="VN7-zy-srd"/>
+                            </constraints>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vhL-on-PKR">
+                            <rect key="frame" x="104" y="41" width="76" height="18"/>
+                            <buttonCell key="cell" type="check" title="开机启动" bezelStyle="regularSquare" imagePosition="left" inset="2" id="iro-TI-bW4">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="startWithLogin:" target="-2" id="IHo-TQ-tSX"/>
+                            </connections>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Em6-Z0-ZsN">
+                            <rect key="frame" x="98" y="21" width="88" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="当前版本：1.0" id="0qf-2t-xdJ">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="43c-er-Uoh">
+                            <rect key="frame" x="127" y="0.0" width="29" height="15"/>
+                            <buttonCell key="cell" type="roundRect" title="退出" bezelStyle="roundedRect" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="10r-Fp-X1V">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="label" size="12"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="quit:" target="-2" id="3zK-9f-Nhx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="283" id="CEi-8Q-Zt8"/>
+                    </constraints>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hYP-1A-etT" secondAttribute="bottom" id="DHJ-zD-nxA"/>
+                <constraint firstItem="hYP-1A-etT" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="SlQ-oM-F8I"/>
+                <constraint firstItem="hYP-1A-etT" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="u1V-NB-Uub"/>
+                <constraint firstAttribute="trailing" secondItem="hYP-1A-etT" secondAttribute="trailing" id="xXu-6s-SpQ"/>
+            </constraints>
+            <point key="canvasLocation" x="110.5" y="392"/>
+        </customView>
+    </objects>
+</document>
